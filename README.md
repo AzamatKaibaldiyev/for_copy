@@ -1,6 +1,15 @@
 # for_copy
 
 
+sudo apt-get build-dep libavresample
+sudo apt-get install libavresample-doc
+sudo apt-get source libavresample
+cd libavresample-<version>
+dpkg-buildpackage -uc -us
+
+########################
+
+
 sudo apt-get update
 sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev
