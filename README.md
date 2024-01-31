@@ -2,9 +2,13 @@
 
 
 sudo apt-get build-dep libavresample
+
 sudo apt-get install libavresample-doc
+
 sudo apt-get source libavresample
+
 cd libavresample-<version>
+
 dpkg-buildpackage -uc -us
 
 ########################
