@@ -6,6 +6,8 @@ apt install dirmngr
 
 apt-key adv --recv-keys EFDC8610341D9410 4CDB129629A4B41A 32B18A1260D8DA0B
 
+apt-key --keyring /etc/apt/trusted.gpg list
+
 ########################
 sudo apt-get build-dep libavresample
 
