@@ -1,6 +1,23 @@
 # for_copy
 
+# Install build dependencies
+sudo apt-get install -y build-essential
 
+# Download CMake source code
+wget https://cmake.org/files/v3.24/cmake-3.24.0.tar.gz
+
+tar -xzvf cmake-3.24.0.tar.gz
+
+cd cmake-3.24.0
+
+# Build and install
+./bootstrap
+
+make
+
+sudo make install
+
+#########################
 
 apt install dirmngr
 
