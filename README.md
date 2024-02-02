@@ -1,4 +1,14 @@
 # for_copy
+```markdown
+'git clone https://gitlab.freedesktop.org/mesa/mesa.git \
+  && cd  /mesa \
+  && mkdir build\
+  && cd build \
+  && meson --buildtype=release -Dprefix=/usr/local -Dglvnd=false -Dgallium-nine=false -Dgallium-omx=disabled -Dgallium-opencl=disabled -Dgallium-va=false -Dgallium-vdpau=false -Dgallium-xa=false -Dgallium-xvmc=false -Dvulkan-drivers= -Dglx=gallium-xlib -Degl=false -Dgbm=false -Dopengl=true -Dgles1=false -Dgles2=false -Dosmesa=true -Dshared-glapi=true -Dllvm=true -Dswr-arches=avx2 -Dplatforms=x11 -Dgallium-drivers=swrast,swr -Ddri-drivers= ..\
+  && ninja install \
+  && rm -rf /mesa'
+
+################################
 
 # Install build dependencies
 sudo apt-get install -y build-essential
